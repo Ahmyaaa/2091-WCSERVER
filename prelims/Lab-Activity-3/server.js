@@ -7,7 +7,7 @@ var http = require('http');
 
 var server = http.createServer(function (req, res) {
   //create web server
-  if ((req.url = '/')) {
+  if (req.url == '/') {
     //check the URL of the current request
 
     // set response header
