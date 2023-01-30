@@ -14,16 +14,32 @@ var server = http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
 
     // set response content
-    res.write('<html><body> <h1>Welcom to my Node.js Application</h1> </body></html>');
-    res.write('<html><body> <p>Welcome John Smith. This is an activity about basics of Node.js</p></body></html>');
+    res.write(
+      '<html><body> <h1>Welcom to my Node.js Application</h1> </body></html>'
+    );
+    res.write(
+      '<html><body> <p>Welcome Sean Warner Dean T. Datu. This is an activity about basics of Node.js</p></body></html>'
+    );
     res.end();
-  } else if (req.url == '/student') {
+  } else if (req.url == '/about') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html><body> <p>This is student Page.</p></body></html>');
+    res.write('<html><body> <h1>This is the about Page</h1> </body></html>');
+    res.write(
+      '<html><body> <p>Welcome Sean Warner Dean T. Datu. This activity will teach on how to deal with a simple server and local modules in Node.js</p></body></html>'
+    );
     res.end();
-  } else if (req.url == '/admin') {
+  } else if (req.url == '/contact') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html><body> <p>This is admin Page.</p></body></html>');
+    res.write(
+      '<html><body> <h1>This is the about Contact Page</h1> </body></html>'
+    );
+    res.write(
+      '<html><body> <p>Sean Warner Dean T. Datu, if you want additional details about this activity go to this site: http://www.tutorialsteacher.com/nodejs/nodejs-tutorials</p></body></html>'
+    );
+    res.end();
+  } else if (req.url == '/gallery') {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write('<html><body> <h1>This is Gallery Page.</h1></body></html>');
     res.end();
   } else res.end('Invalid Request!');
 });
