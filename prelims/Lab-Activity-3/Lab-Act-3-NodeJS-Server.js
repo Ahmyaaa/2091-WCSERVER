@@ -15,7 +15,7 @@ var server = http.createServer(function (req, res) {
 
     // set response content
     res.write(
-      '<html><body> <h1>Welcom to my Node.js Application</h1> </body></html>'
+      '<html><body> <h1>Welcome to my Node.js Application</h1> </body></html>'
     );
     res.write(
       '<html><body> <p>Welcome Sean Warner Dean T. Datu. This is an activity about basics of Node.js</p></body></html>'
