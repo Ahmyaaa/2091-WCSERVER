@@ -2,7 +2,7 @@ const calculation = require('./calculation');
 
 const ratePerHour = 300;
 const hourWork = 4;
-const day = 7;
+const day = 6;
 
 const grossIncome = calculation.product(hourWork, ratePerHour * day);
 const tax = calculation.product(0.1, grossIncome);
