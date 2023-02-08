@@ -10,4 +10,4 @@ function greet2(name) {
   return 'Goodbye! , ' + name;
 }
 
-(module.exports = greet), greet1, greet2;
+module.exports = {greet, greet1, greet2};
