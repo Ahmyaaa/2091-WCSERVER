@@ -7,7 +7,7 @@ function greet1(name) {
 }
 
 function greet2(name) {
-  return ' Goodbye , ' + name + '!,';
+  return ' Goodbye , ' + name + '!';
 }
 
 module.exports = { greet, greet1, greet2 };
