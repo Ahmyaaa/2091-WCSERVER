@@ -3,7 +3,7 @@ function greet(name) {
 }
 
 function greet1(name) {
-  return ' Congratulation , ' + name + '!,';
+  return ' Congratulations , ' + name + '!,';
 }
 
 function greet2(name) {
